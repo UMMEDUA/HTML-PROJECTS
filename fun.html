@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rabishu Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" /> -->
+    
+    <style>
+       #heading{
+        text-align: center;
+        color: #2a363b;
+       background-color:#15B392;
+       font-weight: 600;
+       }
+        /* Additional animations */
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .slider {
+            display: flex;
+            overflow: hidden;
+        }
+        .slider-content {
+            display: flex;
+            animation: slide 30s 
+        }
+        .slide {
+            min-width: 50%;
+            /* background-repeat: repeat; */
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-100%); }
+            40% { transform: translateX(-200%); }
+            60% { transform: translateX(-300%); }
+            80% { transform: translateX(-400%); }
+        }
+        .review {
+    background-color:#e84a5f ;
+         border: 2px solid #ff69b4; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 300px;}
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white py-10 flex justify-between items-center">
+        <a href="#" class="text-3xl font-bold">Rabishu Collection</a>
+        <div class="space-x-4">
+            <a style="font-weight: 600;" href="#home" class="hover:text-yellow-500">Home</a>
+            <a style="font-weight: 600;"href="#shop" class="hover:text-yellow-500">Shop</a>
+            <a style="font-weight: 600;" href="#about" class="hover:text-yellow-500">About Us</a>
+            <a style="font-weight: 600 ;" href="#contact" class="hover:text-yellow-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+     
+    <section id="home" class="relative bg-blue-800 text-white h-screen">
+        <div class="absolute inset-0 bg-opacity-50 bg-black flex items-center justify-center">
+            <h1 class="text-4xl lg:text-6xl font-bold">Fashion for Kids & Girls</h1>
+        </div>
+        <div class="slider w-full h-full">
+            <div class="slider-content">
+                <div class="slide bg-yellow-400 text-center h-full flex justify-center items-center">
+                    <img src="Boys 3D Stripe Raglan Sleeve Shirt Long Sleeve 3D Print Fall Winter Sports Fashion Streetwear Polyester Kids 3-12 Years Crew Neck Outdoor Casual Daily Regular Fit.jfif" alt="Collection 1" class="w-full object-cover opacity-90">
+                </div>
+                <div class="slide bg-orange-400 text-center h-full flex justify-center items-center">
+                    <img src="Toddler Girls Notched Neck Tank Top & Tropical Print Belted Shorts.jpeg" alt="Collection 2" class="w-full object-cover opacity-90">
+                </div>
+                <div class="slide bg-blue-500 text-center h-full flex justify-center items-center">
+                    <img src="girll.png" alt="Collection 3" class="w-full object-cover opacity-90">
+                </div>                                         
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    
+    <section id="shop" class="py-16 bg-white fade-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10 text-blue-800">Our Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105">
+                    <img src="rainbow.png" alt="Product 1" class="w-full">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-orange-600">Rainbow Princess Dress</h3>
+                        <p class="text-gray-500">$49.99</p>
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 mt-4 rounded-full">Add to Cart</button>
+                   </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105">
+                    <img src="Toddler Girls Notched Neck Tank Top & Tropical Print Belted Shorts.jpeg" alt="Product 2" class="w-full">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-orange-600">Sunny Day Outfit</h3>
+                        <p class="text-gray-500">$39.99</p>
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 mt-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105">
+                    <img src="Vestido Con Cinturón De Manga Abullonada, Cuello De Encaje Con Estampado Floral Y Volantes Para Niñas Jóvenes.jpeg" alt="Product 3" class="w-full">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-orange-600">Fluffy Pink Jacket</h3>
+                        <p class="text-gray-500">$59.99</p>
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 mt-4 rounded-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer Reviews Section -->
+    <section   style="background-color: #15B392;;" id="reviews" class="reviews-section">
+        <h2 id="heading">What Our Customers Say</h2>
+        <div class="reviews">
+            <div class="review">
+                <h3 style="color: #D2FF72;">Sarah M.</h3>
+                <p>"I love how vibrant the dresses are! My daughter looks so cute."</p>
+            </div>
+            <div class="review">
+                <h3 style="color: #D2FF72;">Emma W.</h3>
+                <p>"Great quality and such comfortable material. Perfect for kids!"</p>
+            </div>
+            <div class="review">
+                <h3 style="color: #D2FF72;">John D.</h3>
+                <p>"I bought a jacket for my niece, and she absolutely adores it."</p>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="bg-[#FFBB00] py-12">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center text-white mb-8">Why Choose Us?</h2>
+          <div class="flex flex-wrap justify-center space-x-4">
+            <div class="w-1/3 bg-white p-6 shadow-lg rounded-lg">
+              <i class="fas fa-seedling text-[#375E97] text-4xl"></i>
+              <h3 class="text-xl font-semibold mt-4">Eco-Friendly Fabrics</h3>
+              <p>Our fabrics are sourced sustainably and safe for kids.</p>
+            </div>
+            <div class="w-1/3 bg-white p-6 shadow-lg rounded-lg">
+              <i class="fas fa-smile text-[#375E97] text-4xl"></i>
+              <h3 class="text-xl font-semibold mt-4">Comfortable Fit</h3>
+              <p>Our clothes ensure maximum comfort for kids to enjoy their day.</p>
+            </div>
+            <div class="w-1/3 bg-white p-6 shadow-lg rounded-lg">
+              <i class="fas fa-rainbow text-[#375E97] text-4xl"></i>
+              <h3 class="text-xl font-semibold mt-4">Bright & Fun Colors</h3>
+              <p>We bring vibrant designs to make your child stand out.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-200 fade-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10 text-blue-800">About Rabishu Collection</h2>
+            <p class="text-xl text-gray-700">Rabishu Collection offers trendy, colorful, and comfortable clothing for kids and girls. We bring fashion and fun together with high-quality designs made to last.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white fade-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10">Get in Touch</h2>
+            <p class="text-xl mb-6">Email: support@rabishucollection.com</p>
+            <p class="text-xl">Phone: +123 456 7890</p>
+            <div class="mt-8">
+                <a href="#" class="text-yellow-500 hover:text-yellow-600 mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="text-yellow-500 hover:text-yellow-600 mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="text-yellow-500 hover:text-yellow-600 mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Rabishu Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Optional additional JavaScript for interactivity
+    </script>
+</body>
+</html>
